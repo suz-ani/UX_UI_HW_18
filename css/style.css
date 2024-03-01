@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Inter;
+  src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+  font-family: BeVietnamPro-SemiBold;
+  src: url(/fonts/BeVietnamPro-SemiBold.ttf);
+}
+
+/*header and navigation bar styling*/
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.logo {
+  width: 23%;
+  padding: 1%;
+}
+
+nav {
+  width: 72%;
+  padding: 1%;
+}
+
+ul.navigation-tabs {
+  width: 50%;
+  margin-left: auto;
+}
+
+.logo {
+  text-align: start;
+}
+
+/*hero section styling*/
+section.heroImg {
+  height: 600px;
+  padding: 25px;
+}
+
+div.content {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+  background-color: #6c6c6d;
+}
+
+ul.footer-tabs {
+  display: inline-block;
+  vertical-align: top;
+}
