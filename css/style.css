@@ -9,6 +9,11 @@
 }
 
 /*header and navigation bar styling*/
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .inline-block {
   display: inline-block;
   vertical-align: top;
@@ -17,9 +22,10 @@
 div.logo {
   width: 23%;
   padding: 1%;
+  text-align: start;
 }
 
-nav {
+nav.inline-block {
   width: 72%;
   padding: 1%;
 }
@@ -27,10 +33,9 @@ nav {
 ul.navigation-tabs {
   width: 50%;
   margin-left: auto;
-}
-
-.logo {
-  text-align: start;
+  padding-top: 13.52px;
+  padding-bottom: 13.52px;
+  text-align: right;
 }
 
 /*hero section styling*/
