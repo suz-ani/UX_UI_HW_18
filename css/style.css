@@ -36,7 +36,7 @@ ul.navigation-tabs {
   text-align: right;
   font-family: Inter;
   font-size: 24px;
-  color: #48626e;
+
   display: flex;
   justify-content: space-between;
   padding: 0px;
@@ -44,6 +44,7 @@ ul.navigation-tabs {
 
 a:link {
   text-decoration: none;
+  color: #48626e;
 }
 a:visited {
   color: #48626e;
