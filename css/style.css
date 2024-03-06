@@ -130,3 +130,6 @@ ul.footer-tabs {
   display: inline-block;
   vertical-align: top;
 }
+
+@media only screen and (max-width: 600) {
+}
