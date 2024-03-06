@@ -31,17 +31,30 @@ nav.inline-block {
 }
 
 ul.navigation-tabs {
-  width: 50%;
+  width: 30%;
   margin-left: auto;
-  padding-top: 13.52px;
-  padding-bottom: 13.52px;
   text-align: right;
+  font-family: Inter;
+  font-size: 24px;
+  color: #48626e;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: #48626e;
 }
 
 /*hero section styling*/
 section.heroImg {
   height: 600px;
-  padding: 25px;
+  padding: 25px 120px 25px 120px;
+  display: flex;
+  align-items: center;
 }
 
 div.content {
@@ -50,9 +63,67 @@ div.content {
   text-align: center;
 }
 
+/*skills section styling*/
+
+h1 {
+  text-align: center;
+}
+
+#skills {
+  text-align: center;
+}
+
+.mySkills {
+  padding: 60px 120px 60px 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.flexSkills {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*projects section styling*/
+
+.workGrid {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 385px 385px;
+  grid-template-columns: 590px 590px;
+  grid-template-areas:
+    "photo1 desc1"
+    "photo2 desc2";
+  column-gap: 20px;
+  row-gap: 60px;
+}
+
+.projectPhoto1 {
+  grid-area: photo1;
+}
+
+.projectDesc1 {
+  grid-area: desc1;
+}
+
+.projectPhoto2 {
+  grid-area: photo2;
+}
+
+.projectDesc2 {
+  grid-area: desc2;
+}
+
 /*footer*/
 footer {
-  background-color: #6c6c6d;
+  background-color: rgb(227, 227, 227);
 }
 
 ul.footer-tabs {
