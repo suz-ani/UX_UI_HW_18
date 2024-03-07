@@ -1,11 +1,15 @@
 @font-face {
   font-family: Inter;
-  src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(./fonts/Inter-VariableFont_slnt\wght.ttf);
 }
 
 @font-face {
   font-family: BeVietnamPro-SemiBold;
-  src: url(/fonts/BeVietnamPro-SemiBold.ttf);
+  src: url(./fonts/BeVietnamPro-SemiBold.ttf);
+}
+
+body {
+  width: 100%;
 }
 
 /*header and navigation bar styling*/
@@ -36,7 +40,6 @@ ul.navigation-tabs {
   text-align: right;
   font-family: Inter;
   font-size: 24px;
-
   display: flex;
   justify-content: space-between;
   padding: 0px;
@@ -122,6 +125,9 @@ h1 {
   grid-area: desc2;
 }
 
+h3 {
+  text-align: center;
+}
 /*footer*/
 footer {
   background-color: rgb(227, 227, 227);
@@ -132,5 +138,33 @@ ul.footer-tabs {
   vertical-align: top;
 }
 
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%; /*checking to make sure content is filling mobile screen*/
+  }
+
+  header {
+    width: 100%;
+  }
+
+  /* styling skills section on mobile*/
+  .flexContainer {
+    flex-direction: column; /*column-orientation for all skill divs within flexContainer*/
+    gap: 40px; /*creates a gap between all skill divs within flexContainer*/
+  }
+
+  .flexSkills {
+    width: 100%; /*desktop flexSkills in a row with each skill div taking up 33% of flexContainer. Changes mobile column flexSkills to take 100% of flexContainer*/
+  }
+
+  .workGrid {
+    grid-template-rows: 385px 200px 385px 200px;
+    grid-template-columns: 590px;
+    grid-template-areas:
+      "photo1"
+      "desc1"
+      "photo2"
+      "desc2";
+    row-gap: 20px;
+  }
 }
